@@ -33,7 +33,8 @@ a{text-decoration: none;}
     padding: 0 30px ;
 }
 .grid{
-  max-width:700px;
+  max-width:550px;
+
   display: -ms-grid;
   display: grid;
   -ms-grid-columns:1fr 1fr ;
@@ -72,35 +73,35 @@ a{text-decoration: none;}
     font-weight: 500;
     letter-spacing: 3px;
     color:  hsl(228, 12%, 48%);
-    font-size: 14px;
+    font-size: 13px;
 }
 .sline{
 
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-family: 'Fraunces', serif;
    
     line-height: 1em;
     color:  hsl(212, 21%, 14%);
-    font-size: 34px;
+    font-size: 29px;
 
 }
 .para{
     font-family: 'Montserrat', sans-serif;
     color:  hsl(228, 12%, 48%);
-    font-size: 14px;
+    font-size: .9em;
     line-height: 1.6em;
 }
 
 p.new{
     font-family: 'Fraunces', serif;
     color: hsl(158, 36%, 37%);
-    font-size: 25px;
+    font-size: 2em;
     margin-right: 25px;
 
 }
 p.old{
     color: hsl(228, 12%, 48%);
-    text-decoration: line-through;
+    
 }
 .price{
     display: -webkit-box;
@@ -124,10 +125,11 @@ button.cta{
      -webkit-transition: background-color .3s ease;
      -o-transition: background-color .3s ease;
      transition: background-color .3s ease;
-     width: 100%;
+     width: 14.6em;
 
 
 }
+
 button.cta:hover{
     background-color: hsl(158, 36%, 22%);
 }
@@ -143,9 +145,15 @@ button.cta img{
     .grid{
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+        max-width: 470px;
     }
+    .container{
+        margin:20px auto;
+        padding:0 18px ;
+    }
+   
 .img img{
-    max-height: 450px;
+    max-height: 350px;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -157,36 +165,85 @@ button.cta img{
 }
 .fline, .sline, .para, .price{
     padding-bottom: 23px;
-}
 
 }
-    
-@media  only screen and (max-width:375px){
 
-.container{
-    margin:15px auto;
-    padding:0 15px ;
-    
-}
-.img img {
-max-height: 290px;
-
-}
-.cardcon{
-    padding: 22px;
-}
-
-.sline{
-    font-size: 28px;
-}
-.para{
-    font-size: 12px;
-}
-.price{
-    font-size: 23px;}
-    
 button.cta{
-       font-size:13px;
-       
-    }
+    width: 29em;
+    
+ }
+
 }
+    
+
+@media  only screen and (max-width:425px){
+
+    .container{
+        margin:15px auto;
+        padding:0 15px ;
+        
+    }
+    .grid{ max-width: 380px;}
+    .img img {
+    max-height: 290px;
+    max-width: 380px;
+    
+    }
+    .cardcon{
+        padding: 22px;
+    }
+    
+    .sline{
+        font-size: 2.2em;
+        padding-right: 1em;
+    }
+    .para{
+        font-size: 14px;
+        padding-right: -9.5em;
+        margin-top: -4px;
+    }
+    .price{
+        font-size: 1.2em;}
+        
+    button.cta{
+           font-size:14px;
+           width: 24em;
+           
+        }
+    }
+    @media  only screen and (max-width:375px){
+
+        .container{
+            margin:15px auto;
+            padding:0 15px ;
+            
+        }
+        .grid{ max-width: 320px;}
+        .img img {
+        max-height: 290px;
+        max-width: 320px;
+        
+        }
+        .cardcon{
+            padding: 22px;
+        }
+        
+        .sline{
+            font-size: 2em;
+            padding-right: 1em;
+        }
+        .para{
+            font-size: 13px;
+            padding-right: -9.5em;
+            margin-top: -10px;
+        }
+        .price{
+            font-size: 1.2em;}
+            
+        button.cta{
+               font-size:13px;
+               width: 21em;
+               
+            }
+        }
+        
